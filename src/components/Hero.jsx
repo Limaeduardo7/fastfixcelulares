@@ -4,8 +4,8 @@ import BlurText from '@/components/bits/BlurText'
 import ScrollReveal from '@/components/bits/ScrollReveal'
 import QuoteForm from '@/components/QuoteForm'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
-import desktopBg from '../../uploads/gere_uma_imagem_202604201915.png'
-import mobileBg from '../../uploads/gere_uma_imagem_202604201918.png'
+const desktopBg = '/hero-desktop.png'
+const mobileBg = '/hero-mobile.png'
 
 const WA_HERO = `https://wa.me/5554999487768?text=${encodeURIComponent('Olá! Quero falar sobre meu celular')}`
 

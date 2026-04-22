@@ -1,16 +1,18 @@
+import { lazy, Suspense } from 'react'
 import Aurora          from '@/components/bits/Aurora'
 import Header          from '@/components/Header'
 import Hero            from '@/components/Hero'
 import LiveStrip       from '@/components/LiveStrip'
-import Brands          from '@/components/Brands'
-import Services        from '@/components/Services'
-import HowItWorks      from '@/components/HowItWorks'
-import Testimonials    from '@/components/Testimonials'
-import FAQ             from '@/components/FAQ'
-import Location        from '@/components/Location'
-import FinalCTA        from '@/components/FinalCTA'
-import Footer          from '@/components/Footer'
-import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+
+const Brands          = lazy(() => import('@/components/Brands'))
+const Services        = lazy(() => import('@/components/Services'))
+const HowItWorks      = lazy(() => import('@/components/HowItWorks'))
+const Testimonials    = lazy(() => import('@/components/Testimonials'))
+const FAQ             = lazy(() => import('@/components/FAQ'))
+const Location        = lazy(() => import('@/components/Location'))
+const FinalCTA        = lazy(() => import('@/components/FinalCTA'))
+const Footer          = lazy(() => import('@/components/Footer'))
+const FloatingWhatsApp = lazy(() => import('@/components/FloatingWhatsApp'))
 
 export default function App() {
   return (
@@ -20,16 +22,20 @@ export default function App() {
       <main className="relative z-10 bg-[#0a0a0b]">
         <Hero />
         <LiveStrip />
-        <Brands />
-        <Services />
-        <HowItWorks />
-        <Testimonials />
-        <FAQ />
-        <Location />
-        <FinalCTA />
+        <Suspense fallback={null}>
+          <Brands />
+          <Services />
+          <HowItWorks />
+          <Testimonials />
+          <FAQ />
+          <Location />
+          <FinalCTA />
+        </Suspense>
       </main>
-      <Footer />
-      <FloatingWhatsApp />
+      <Suspense fallback={null}>
+        <Footer />
+        <FloatingWhatsApp />
+      </Suspense>
     </>
   )
 }
