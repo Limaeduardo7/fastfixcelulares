@@ -37,8 +37,8 @@ export default function Location() {
                   label: 'Telefones',
                   value: (
                     <>
-                      <a href="tel:+555499487768" className="hover:text-orange-400 transition-colors">
-                        (54) 99948-7768
+                      <a href="tel:+5554981673607" className="hover:text-orange-400 transition-colors">
+                        (54) 98167-3607
                       </a>
                       {' | '}
                       <a href="tel:+555498167367" className="hover:text-orange-400 transition-colors">

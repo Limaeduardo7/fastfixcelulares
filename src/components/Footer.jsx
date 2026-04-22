@@ -60,8 +60,8 @@ export default function Footer() {
 
           <div>
             <h4 className="mb-3.5 text-[13px] font-semibold uppercase tracking-[.06em] text-gray-900">Contato</h4>
-            <a href="tel:+555499487768" className="block py-1 text-[14px] text-gray-500 transition-colors hover:text-orange-500">
-              (54) 99948-7768
+            <a href="tel:+5554981673607" className="block py-1 text-[14px] text-gray-500 transition-colors hover:text-orange-500">
+              (54) 98167-3607
             </a>
             <a href="tel:+555498167367" className="block py-1 text-[14px] text-gray-500 transition-colors hover:text-orange-500">
               (54) 98167-3607

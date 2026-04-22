@@ -70,9 +70,9 @@ export default function Hero() {
                 </a>
               </Button>
               <Button asChild variant="ghost" size="md">
-                <a href="tel:+555499487768">
+                <a href="tel:+5554981673607">
                   <Phone className="h-4.5 w-4.5" />
-                  (54) 99948-7768
+                  (54) 98167-3607
                 </a>
               </Button>
             </div>
