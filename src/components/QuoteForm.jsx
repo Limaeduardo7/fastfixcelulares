@@ -29,7 +29,7 @@ export default function QuoteForm() {
     e.preventDefault()
     const issues = selected.join(', ')
     const msg =
-      `Ola, FastFix! Gostaria de receber uma avaliacao.\n\n` +
+      `Olá, FastFix! Gostaria de receber uma avaliação.\n\n` +
       `• Nome: ${form.nome}\n` +
       `• WhatsApp: ${form.fone}\n` +
       `• Aparelho: ${form.marca} ${form.modelo}\n` +
@@ -42,7 +42,7 @@ export default function QuoteForm() {
   return (
     <div className="relative rounded-3xl border border-white/[.07] bg-[#18181b] p-[30px] shadow-[0_24px_64px_-12px_rgba(0,0,0,.65)] gradient-border-card">
       <div className="mb-2 flex items-center justify-between">
-        <h2 className="text-xl font-display font-semibold tracking-tight text-white">Avaliacao gratuita</h2>
+        <h2 className="text-xl font-display font-semibold tracking-tight text-white">Avaliação gratuita</h2>
         <Badge>EM 2 MIN</Badge>
       </div>
       <p className="mb-5 text-[13.5px] text-ink-300">Nos conte o que aconteceu e retornamos no WhatsApp com valor e prazo.</p>
@@ -98,7 +98,7 @@ export default function QuoteForm() {
 
         <div>
           <Label>O que aconteceu?</Label>
-          <div className="mt-0.5 flex flex-wrap gap-2" role="group" aria-label="Situacoes">
+          <div className="mt-0.5 flex flex-wrap gap-2" role="group" aria-label="Situações">
             {ISSUES.map((issue) => (
               <button
                 key={issue}
@@ -128,7 +128,7 @@ export default function QuoteForm() {
 
         <p className="flex items-center justify-center gap-1.5 pt-0.5 text-center text-[12px] text-ink-300">
           <Lock className="h-3 w-3" />
-          Seus dados sao usados apenas para este atendimento. Sem spam.
+          Seus dados são usados apenas para este atendimento. Sem spam.
         </p>
       </form>
     </div>

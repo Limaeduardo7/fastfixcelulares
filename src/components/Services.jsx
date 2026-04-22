@@ -9,27 +9,27 @@ const SERVICES = [
     icon: Smartphone,
     title: 'Tela nova',
     price: 'A partir de R$ 189 · No mesmo dia',
-    desc: 'Para vidro quebrado, imagem escura, touch parado, manchas ou linhas. Temos opcoes compativeis com o seu modelo.',
-    feats: ['Avaliacao gratuita em 15 min', 'Pecas testadas e garantidas', '90 dias de garantia'],
-    wa: 'Ola! Quero saber o valor para tela nova',
+    desc: 'Para vidro quebrado, imagem escura, touch parado, manchas ou linhas. Temos opções compatíveis com o seu modelo.',
+    feats: ['Avaliação gratuita em 15 min', 'Peças testadas e garantidas', '90 dias de garantia'],
+    wa: 'Olá! Quero saber o valor para tela nova',
     cta: 'Ver valor da tela',
   },
   {
     icon: BatteryMedium,
     title: 'Bateria nova',
-    price: 'A partir de R$ 149 · Em ate 40 minutos',
-    desc: 'Para aparelho descarregando rapido, desligando sozinho ou perdendo autonomia ao longo do dia.',
-    feats: ['Teste gratis da bateria', 'Opcoes para iPhone e Android', '6 meses de garantia'],
-    wa: 'Ola! Quero saber o valor para bateria nova',
+    price: 'A partir de R$ 149 · Em até 40 minutos',
+    desc: 'Para aparelho descarregando rápido, desligando sozinho ou perdendo autonomia ao longo do dia.',
+    feats: ['Teste grátis da bateria', 'Opções para iPhone e Android', '6 meses de garantia'],
+    wa: 'Olá! Quero saber o valor para bateria nova',
     cta: 'Ver valor da bateria',
   },
   {
     icon: Cpu,
     title: 'Falhas internas',
     price: 'Valor sob consulta · Loja em Caxias do Sul',
-    desc: 'Para aparelho que nao liga, nao carrega, reinicia sozinho, perde sinal ou apresentou falha depois de contato com agua.',
-    feats: ['Avaliacao gratuita', 'Valor explicado antes de seguir', 'Atendimento por etapas'],
-    wa: 'Ola! Meu celular esta com uma falha interna',
+    desc: 'Para aparelho que não liga, não carrega, reinicia sozinho, perde sinal ou apresentou falha depois de contato com água.',
+    feats: ['Avaliação gratuita', 'Valor explicado antes de seguir', 'Atendimento por etapas'],
+    wa: 'Olá! Meu celular está com uma falha interna',
     cta: 'Falar sobre o aparelho',
   },
 ]
@@ -45,7 +45,7 @@ export default function Services() {
               As escolhas mais pedidas na loja.
             </h2>
             <p className="text-[17px] text-ink-200">
-              Tres frentes concentram boa parte dos nossos atendimentos e costumam resolver o dia a dia de quem precisa usar o celular sem pausa.
+              Três frentes concentram boa parte dos nossos atendimentos e costumam resolver o dia a dia de quem precisa usar o celular sem pausa.
             </p>
           </div>
         </ScrollReveal>
