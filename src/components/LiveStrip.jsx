@@ -9,13 +9,13 @@ function getBaseCount() {
 
 function getNextSlot() {
   const h = new Date().getHours()
-  if (h < 9) return 'hoje as 09:30'
-  if (h >= 18) return 'amanha as 09:00'
+  if (h < 9) return 'hoje às 09:30'
+  if (h >= 18) return 'amanhã às 09:00'
   const d = new Date()
   const next = Math.min(18, h + 1)
   const mins = d.getMinutes() < 30 ? '30' : '00'
   const hh = mins === '00' ? next + 1 : next
-  return `hoje as ${String(hh).padStart(2, '0')}:${mins}`
+  return `hoje às ${String(hh).padStart(2, '0')}:${mins}`
 }
 
 function getTodayDate() {

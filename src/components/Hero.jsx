@@ -7,13 +7,13 @@ import WhatsAppIcon from '@/components/WhatsAppIcon'
 import desktopBg from '../../uploads/gere_uma_imagem_202604201915.png'
 import mobileBg from '../../uploads/gere_uma_imagem_202604201918.png'
 
-const WA_HERO = `https://wa.me/5554999487768?text=${encodeURIComponent('Ola! Quero falar sobre meu celular')}`
+const WA_HERO = `https://wa.me/5554999487768?text=${encodeURIComponent('Olá! Quero falar sobre meu celular')}`
 
 const BULLETS = [
-  'Pecas selecionadas',
+  'Peças selecionadas',
   'Equipe experiente',
-  'Avaliacao sem compromisso',
-  'Loja fisica + WhatsApp',
+  'Avaliação sem compromisso',
+  'Loja física + WhatsApp',
 ]
 
 export default function Hero() {
@@ -35,7 +35,7 @@ export default function Hero() {
             <div className="hero-pill mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/[.08] bg-white/[.04] px-3.5 py-2 text-[13px] text-ink-200">
               <span className="h-2 w-2 rounded-full bg-whatsapp animate-pulse-dot shadow-[0_0_0_0_rgba(37,211,102,.6)]" />
               <span>
-                <strong className="text-white">Aberto agora</strong> · Resposta em ate <strong className="text-white">2 minutos</strong> no WhatsApp
+                <strong className="text-white">Aberto agora</strong> · Resposta em até <strong className="text-white">2 minutos</strong> no WhatsApp
               </span>
             </div>
 
@@ -45,9 +45,9 @@ export default function Hero() {
             </h1>
 
             <p className="mb-7 max-w-[560px] text-[clamp(16px,1.4vw,19px)] text-ink-200">
-              A FastFix atende <strong className="text-white">Caxias do Sul</strong> ha mais de 10 anos com opcoes para
-              tela, bateria e situacoes do dia a dia do aparelho. Tudo com pecas selecionadas, equipe experiente e
-              avaliacao gratuita.
+              A FastFix atende <strong className="text-white">Caxias do Sul</strong> há mais de 10 anos com opções para
+              tela, bateria e situações do dia a dia do aparelho. Tudo com peças selecionadas, equipe experiente e
+              avaliação gratuita.
             </p>
 
             <div className="mb-8 grid max-w-[520px] grid-cols-2 gap-3 max-sm:grid-cols-1">
@@ -97,7 +97,7 @@ export default function Hero() {
               <div>
                 <div className="text-sm tracking-[2px] text-orange-400">★★★★★</div>
                 <div className="mt-0.5 text-[13px] text-ink-300">
-                  <strong className="text-white">+45.000 clientes</strong> atendidos · 4.9 de avaliacao media
+                  <strong className="text-white">+45.000 clientes</strong> atendidos · 4.9 de avaliação média
                 </div>
               </div>
             </div>

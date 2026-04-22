@@ -4,12 +4,12 @@ import { Button } from '@/components/ui/button'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
 
 const WA_BASE = 'https://wa.me/5554999487768?text='
-const WA_HELLO = encodeURIComponent('Ola! Quero falar sobre meu celular')
+const WA_HELLO = encodeURIComponent('Olá! Quero falar sobre meu celular')
 
 const NAV_LINKS = [
-  ['Servicos', 'servicos'],
+  ['Serviços', 'servicos'],
   ['Como funciona', 'como-funciona'],
-  ['Avaliacoes', 'depoimentos'],
+  ['Avaliações', 'depoimentos'],
   ['FAQ', 'faq'],
   ['Onde estamos', 'localizacao'],
 ]
@@ -134,7 +134,7 @@ export default function Header() {
             <WhatsAppIcon className="h-5 w-5" />
             Falar no WhatsApp
           </a>
-          <p className="mt-3 text-center text-[11px] text-gray-400">Resposta em ate 2 minutos · Seg-Sex 08:30-18:30</p>
+          <p className="mt-3 text-center text-[11px] text-gray-400">Resposta em até 2 minutos · Seg-Sex 08:30-18:30</p>
         </div>
       </div>
     </>

@@ -24,7 +24,7 @@ export default function FinalCTA() {
             <BlurText text="atende hoje" delay={0.07} />
             <span>.</span>
           </h2>
-          <p className="mb-10 text-[19px] text-ink-200">Avaliacao gratuita, sem compromisso. Resposta em ate 2 minutos.</p>
+          <p className="mb-10 text-[19px] text-ink-200">Avaliação gratuita, sem compromisso. Resposta em até 2 minutos.</p>
 
           <Button asChild variant="whatsapp" size="xl">
             <a href={WA} target="_blank" rel="noopener">
@@ -35,7 +35,7 @@ export default function FinalCTA() {
           </Button>
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-5 text-[13px] text-ink-300">
-            {['Avaliacao gratuita', 'Resposta em 2 min', '+10 anos em Caxias do Sul'].map((text) => (
+            {['Avaliação gratuita', 'Resposta em 2 min', '+10 anos em Caxias do Sul'].map((text) => (
               <span key={text} className="flex items-center gap-1.5">
                 <Check className="h-3.5 w-3.5 stroke-ink-300" strokeWidth={2.4} />
                 {text}

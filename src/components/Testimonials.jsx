@@ -5,25 +5,25 @@ import CtaButton from '@/components/CtaButton'
 
 const REVIEWS = [
   {
-    body: 'Meu iPhone 12 nao ligava depois de cair na agua. Em outros lugares disseram que nao valia a pena tentar. Na FastFix me explicaram tudo com calma e em 2 dias eu ja estava com o aparelho em maos e minhas fotos salvas.',
+    body: 'Meu iPhone 12 não ligava depois de cair na água. Em outros lugares disseram que não valia a pena tentar. Na FastFix me explicaram tudo com calma e em 2 dias eu já estava com o aparelho em mãos e minhas fotos salvas.',
     name: 'Luciana C.',
     init: 'LC',
     grad: ['#B56B3E', '#6B3820'],
-    time: 'Ha 3 semanas',
+    time: 'Há 3 semanas',
   },
   {
-    body: 'Fui pela manha e sai com tudo resolvido antes do almoco. Preco justo, atendimento claro e uma experiencia muito tranquila do comeco ao fim.',
+    body: 'Fui pela manhã e saí com tudo resolvido antes do almoço. Preço justo, atendimento claro e uma experiência muito tranquila do começo ao fim.',
     name: 'Marcos R.',
     init: 'MR',
     grad: ['#3E6AB5', '#1D3C6B'],
-    time: 'Ha 1 mes',
+    time: 'Há 1 mês',
   },
   {
-    body: 'O atendimento pelo WhatsApp foi rapido e honesto. Passei o modelo, recebi a orientacao e quando cheguei na loja ja sabiam exatamente como me atender. Tudo muito organizado.',
+    body: 'O atendimento pelo WhatsApp foi rápido e honesto. Passei o modelo, recebi a orientação e quando cheguei na loja já sabiam exatamente como me atender. Tudo muito organizado.',
     name: 'Ana Paula S.',
     init: 'AP',
     grad: ['#B53E78', '#6B1D45'],
-    time: 'Ha 2 meses',
+    time: 'Há 2 meses',
   },
 ]
 
@@ -33,12 +33,12 @@ export default function Testimonials() {
       <div className="container-site">
         <ScrollReveal>
           <div className="mx-auto mb-14 max-w-[720px] text-center">
-            <ShinyText text="Quem ja passou por aqui" className="mb-4 text-[12px] font-semibold uppercase tracking-[.22em]" />
+            <ShinyText text="Quem já passou por aqui" className="mb-4 text-[12px] font-semibold uppercase tracking-[.22em]" />
             <h2 className="mb-4 text-clamp-section font-display font-semibold tracking-[-0.03em] text-white">
               +45 mil atendimentos. A nota fala por si.
             </h2>
             <p className="text-[17px] text-ink-200">
-              Avaliacoes reais de clientes atendidos em nossa loja no Centro de Caxias do Sul.
+              Avaliações reais de clientes atendidos em nossa loja no Centro de Caxias do Sul.
             </p>
           </div>
         </ScrollReveal>
@@ -79,7 +79,7 @@ export default function Testimonials() {
             </div>
             <div className="text-[13px] text-ink-300">
               <div className="mb-1 block text-sm tracking-[2px] text-orange-400">★★★★★</div>
-              Baseado em <strong className="text-white"><CountUp end={1240} suffix="+" /></strong> avaliacoes verificadas no Google · +10 anos em Caxias do Sul
+              Baseado em <strong className="text-white"><CountUp end={1240} suffix="+" /></strong> avaliações verificadas no Google · +10 anos em Caxias do Sul
             </div>
           </div>
         </ScrollReveal>

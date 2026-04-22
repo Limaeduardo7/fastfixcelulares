@@ -11,7 +11,7 @@ export default function Footer() {
               <img src="/logo-fastfix.png" alt="FastFix" className="h-[38px] w-auto" />
             </a>
             <p className="max-w-[340px] text-[14px] leading-relaxed text-gray-500">
-              FastFix em Caxias do Sul ha mais de 10 anos, com opcoes para tela, bateria e outras necessidades do aparelho.
+              FastFix em Caxias do Sul há mais de 10 anos, com opções para tela, bateria e outras necessidades do aparelho.
             </p>
             <div className="mt-[18px] flex gap-2.5">
               <a
@@ -48,7 +48,7 @@ export default function Footer() {
             <h4 className="mb-3.5 text-[13px] font-semibold uppercase tracking-[.06em] text-gray-900">Institucional</h4>
             {[
               ['Como funciona', '#como-funciona'],
-              ['Avaliacoes', '#depoimentos'],
+              ['Avaliações', '#depoimentos'],
               ['Perguntas', '#faq'],
               ['Onde estamos', '#localizacao'],
             ].map(([label, href]) => (
