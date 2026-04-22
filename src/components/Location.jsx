@@ -6,41 +6,44 @@ const DOW = new Date().getDay()
 
 export default function Location() {
   return (
-    <section id="localizacao" className="py-24 relative z-10">
+    <section id="localizacao" className="relative z-10 py-24">
       <div className="container-site">
         <ScrollReveal>
-          <div className="text-center max-w-[720px] mx-auto mb-14">
-            <ShinyText text="Onde estamos" className="text-[12px] tracking-[.22em] uppercase font-semibold mb-4" />
-            <h2 className="text-clamp-section font-display font-semibold text-white tracking-[-0.03em] mb-4">
-              No coração de Caxias do Sul.
+          <div className="mx-auto mb-14 max-w-[720px] text-center">
+            <ShinyText text="Onde estamos" className="mb-4 text-[12px] font-semibold uppercase tracking-[.22em]" />
+            <h2 className="mb-4 text-clamp-section font-display font-semibold tracking-[-0.03em] text-white">
+              No centro de Caxias do Sul.
             </h2>
             <p className="text-[17px] text-ink-200">
-              Loja física no Centro, fácil de chegar, estacionamento rotativo na porta.
+              Loja no Centro, fácil de chegar, com estacionamento rotativo na porta.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-10 items-stretch max-lg:grid-cols-1">
-          {/* Info card */}
+        <div className="grid items-stretch gap-10 max-lg:grid-cols-1 lg:grid-cols-[1fr_1.1fr]">
           <ScrollReveal direction="left">
-            <div className="bg-[#18181b] border border-white/[.07] rounded-[24px] p-9 flex flex-col h-full">
-              <h3 className="text-[28px] font-display font-semibold text-white tracking-tight mb-2">FastFix Celulares</h3>
-              <p className="text-[15px] text-ink-300 mb-7">Rua Dr. Montaury, 1271 — Centro</p>
+            <div className="flex h-full flex-col rounded-[24px] border border-white/[.07] bg-[#18181b] p-9">
+              <h3 className="mb-2 text-[28px] font-display font-semibold tracking-tight text-white">FastFix Celulares</h3>
+              <p className="mb-7 text-[15px] text-ink-300">Rua Dr. Montaury, 1271 - Centro</p>
 
               {[
                 {
                   icon: MapPin,
                   label: 'Endereço',
-                  value: 'Rua Dr. Montaury, 1271 · Centro · Caxias do Sul/RS',
+                  value: 'Rua Dr. Montaury, 1271 | Centro | Caxias do Sul/RS',
                 },
                 {
                   icon: Phone,
                   label: 'Telefones',
                   value: (
                     <>
-                      <a href="tel:+555499487768" className="hover:text-orange-400 transition-colors">(54) 99948-7768</a>
-                      {' · '}
-                      <a href="tel:+555498167367" className="hover:text-orange-400 transition-colors">(54) 98167-3607</a>
+                      <a href="tel:+555499487768" className="hover:text-orange-400 transition-colors">
+                        (54) 99948-7768
+                      </a>
+                      {' | '}
+                      <a href="tel:+555498167367" className="hover:text-orange-400 transition-colors">
+                        (54) 98167-3607
+                      </a>
                     </>
                   ),
                 },
@@ -54,61 +57,55 @@ export default function Location() {
                   ),
                 },
               ].map(({ icon: Icon, label, value }) => (
-                <div key={label} className="flex gap-3.5 py-4 border-t border-white/[.06] first:border-t-0 first:pt-0">
-                  <div className="w-10 h-10 rounded-[10px] bg-orange-500/[.14] border border-orange-500/35 grid place-items-center flex-shrink-0">
-                    <Icon className="w-[18px] h-[18px] stroke-orange-400" strokeWidth={1.8} />
+                <div key={label} className="flex gap-3.5 border-t border-white/[.06] py-4 first:border-t-0 first:pt-0">
+                  <div className="grid h-10 w-10 flex-shrink-0 place-items-center rounded-[10px] border border-orange-500/35 bg-orange-500/[.14]">
+                    <Icon className="h-[18px] w-[18px] stroke-orange-400" strokeWidth={1.8} />
                   </div>
                   <div>
-                    <div className="text-[12px] text-ink-300 uppercase tracking-[.1em] font-medium mb-0.5">{label}</div>
-                    <div className="text-white text-[15px] font-medium">{value}</div>
+                    <div className="mb-0.5 text-[12px] font-medium uppercase tracking-[.1em] text-ink-300">{label}</div>
+                    <div className="text-[15px] font-medium text-white">{value}</div>
                   </div>
                 </div>
               ))}
 
-              <div className="mt-5 pt-5 border-t border-white/[.06]">
-                <p className="text-[12px] text-ink-300 uppercase tracking-[.1em] mb-2.5">Horário de atendimento</p>
+              <div className="mt-5 border-t border-white/[.06] pt-5">
+                <p className="mb-2.5 text-[12px] uppercase tracking-[.1em] text-ink-300">Horário de atendimento</p>
                 {[
-                  { label: 'Segunda a Sexta', hrs: '08:30 – 18:30', active: DOW >= 1 && DOW <= 5 },
-                  { label: 'Sábado',           hrs: '09:00 – 13:00', active: DOW === 6 },
-                  { label: 'Domingo',          hrs: 'Fechado',       active: false, closed: true },
-                ].map(row => (
-                  <div
-                    key={row.label}
-                    className={`flex justify-between text-sm py-1 ${row.active ? 'text-orange-400 font-semibold' : ''}`}
-                  >
+                  { label: 'Segunda a Sexta', hrs: '08:30 - 18:30', active: DOW >= 1 && DOW <= 5 },
+                  { label: 'Sábado', hrs: '09:00 - 13:00', active: DOW === 6 },
+                  { label: 'Domingo', hrs: 'Fechado', active: false, closed: true },
+                ].map((row) => (
+                  <div key={row.label} className={`flex justify-between py-1 text-sm ${row.active ? 'font-semibold text-orange-400' : ''}`}>
                     <span className={row.active ? 'text-orange-400' : 'text-ink-200'}>{row.label}</span>
-                    <span className={row.closed ? 'text-ink-400' : row.active ? 'text-orange-400' : 'text-white'}>
-                      {row.hrs}
-                    </span>
+                    <span className={row.closed ? 'text-ink-400' : row.active ? 'text-orange-400' : 'text-white'}>{row.hrs}</span>
                   </div>
                 ))}
               </div>
             </div>
           </ScrollReveal>
 
-          {/* Map */}
           <ScrollReveal direction="right">
-            <div className="relative rounded-[24px] overflow-hidden border border-white/[.08] min-h-[480px] bg-ink-900">
+            <div className="relative min-h-[480px] overflow-hidden rounded-[24px] border border-white/[.08] bg-ink-900">
               <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-51.1820%2C-29.1700%2C-51.1720%2C-29.1640&layer=mapnik&marker=-29.1670%2C-51.1770"
+                src="https://maps.google.com/maps?q=FastFix+Conserto+de+Celular,+Rua+Dr.+Montaury,+1271,+Centro,+Caxias+do+Sul+-+RS,+95020-190&ftid=0x951ea39899633dcf:0x130bc7a51008b78&z=17&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Mapa da FastFix em Caxias do Sul"
-                className="w-full h-full border-0 absolute inset-0"
-                style={{ filter: 'grayscale(.2) invert(.92) hue-rotate(180deg) brightness(.9) contrast(.9)' }}
+                className="absolute inset-0 h-full w-full border-0"
+                style={{ filter: 'grayscale(.15) contrast(.95)' }}
               />
-              <div className="absolute top-4 left-4 right-4 flex flex-col sm:flex-row sm:justify-between gap-2 pointer-events-none z-10">
-                <div className="pointer-events-auto self-start flex items-center gap-2 px-3.5 py-2 rounded-full bg-[rgba(13,15,20,.9)] backdrop-blur-xl border border-white/10 text-[12px] text-white font-medium whitespace-nowrap">
-                  <span className="w-2 h-2 rounded-full bg-whatsapp animate-pulse-dot flex-shrink-0" />
+              <div className="absolute left-4 right-4 top-4 z-10 flex flex-col gap-2 pointer-events-none sm:flex-row sm:justify-between">
+                <div className="pointer-events-auto self-start whitespace-nowrap rounded-full border border-white/10 bg-[rgba(13,15,20,.9)] px-3.5 py-2 text-[12px] font-medium text-white backdrop-blur-xl">
+                  <span className="mr-2 inline-block h-2 w-2 rounded-full bg-whatsapp align-middle animate-pulse-dot" />
                   Aberto agora · até 18:30
                 </div>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=Rua+Dr.+Montaury+1271+Caxias+do+Sul"
                   target="_blank"
                   rel="noopener"
-                  className="pointer-events-auto self-start flex items-center gap-2 px-3.5 py-2 rounded-full bg-orange-500/90 text-[12px] text-white font-medium hover:bg-orange-500 transition-colors whitespace-nowrap"
+                  className="pointer-events-auto self-start whitespace-nowrap rounded-full bg-orange-500/90 px-3.5 py-2 text-[12px] font-medium text-white transition-colors hover:bg-orange-500"
                 >
-                  Ver rota <ExternalLink className="w-3 h-3 flex-shrink-0" />
+                  Ver rota <ExternalLink className="ml-2 inline h-3 w-3 flex-shrink-0" />
                 </a>
               </div>
             </div>
