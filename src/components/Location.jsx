@@ -71,8 +71,8 @@ export default function Location() {
               <div className="mt-5 border-t border-white/[.06] pt-5">
                 <p className="mb-2.5 text-[12px] uppercase tracking-[.1em] text-ink-300">Horário de atendimento</p>
                 {[
-                  { label: 'Segunda a Sexta', hrs: '08:30 - 18:30', active: DOW >= 1 && DOW <= 5 },
-                  { label: 'Sábado', hrs: '09:00 - 13:00', active: DOW === 6 },
+                  { label: 'Segunda a Sexta', hrs: '09:00 - 19:00', active: DOW >= 1 && DOW <= 5 },
+                  { label: 'Sábado', hrs: '09:00 - 17:00', active: DOW === 6 },
                   { label: 'Domingo', hrs: 'Fechado', active: false, closed: true },
                 ].map((row) => (
                   <div key={row.label} className={`flex justify-between py-1 text-sm ${row.active ? 'font-semibold text-orange-400' : ''}`}>
@@ -97,7 +97,7 @@ export default function Location() {
               <div className="absolute left-4 right-4 top-4 z-10 flex flex-col gap-2 pointer-events-none sm:flex-row sm:justify-between">
                 <div className="pointer-events-auto self-start whitespace-nowrap rounded-full border border-white/10 bg-[rgba(13,15,20,.9)] px-3.5 py-2 text-[12px] font-medium text-white backdrop-blur-xl">
                   <span className="mr-2 inline-block h-2 w-2 rounded-full bg-whatsapp align-middle animate-pulse-dot" />
-                  Aberto agora · até 18:30
+                  Aberto agora · até 19:00
                 </div>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=Rua+Dr.+Montaury+1271+Caxias+do+Sul"

@@ -134,7 +134,7 @@ export default function Header() {
             <WhatsAppIcon className="h-5 w-5" />
             Falar no WhatsApp
           </a>
-          <p className="mt-3 text-center text-[11px] text-gray-400">Resposta em até 2 minutos · Seg-Sex 08:30-18:30</p>
+          <p className="mt-3 text-center text-[11px] text-gray-400">Resposta em até 2 minutos · Seg-Sex 09:00-19:00</p>
         </div>
       </div>
     </>
