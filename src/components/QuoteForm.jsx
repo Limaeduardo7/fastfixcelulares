@@ -4,6 +4,7 @@ import { Label } from '@/components/ui/label'
 import { Badge } from '@/components/ui/badge'
 import { Lock } from 'lucide-react'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
+import { trackConversion } from '@/lib/gtag'
 
 const WA_NUMBER = '5554999487768'
 const ISSUES = ['Tela trincada', 'Bateria fraca', 'Nao liga', 'Nao carrega', 'Caiu na agua', 'Outro']
@@ -27,6 +28,7 @@ export default function QuoteForm() {
 
   function handleSubmit(e) {
     e.preventDefault()
+    trackConversion('quote_form_submit')
     const issues = selected.join(', ')
     const msg =
       `Olá, FastFix! Gostaria de receber uma avaliação.\n\n` +

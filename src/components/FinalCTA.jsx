@@ -4,6 +4,7 @@ import BlurText from '@/components/bits/BlurText'
 import ScrollReveal from '@/components/bits/ScrollReveal'
 import ShinyText from '@/components/bits/ShinyText'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
+import { trackConversion } from '@/lib/gtag'
 
 const WA = 'https://wa.me/5554999487768?text=Ola!%20Vi%20a%20FastFix%20no%20Google%20e%20quero%20entender%20o%20que%20faz%20mais%20sentido%20para%20o%20meu%20celular.'
 
@@ -27,7 +28,7 @@ export default function FinalCTA() {
           <p className="mb-10 text-[19px] text-ink-200">Avaliação gratuita, sem compromisso. Resposta em até 2 minutos.</p>
 
           <Button asChild variant="whatsapp" size="xl">
-            <a href={WA} target="_blank" rel="noopener">
+            <a href={WA} target="_blank" rel="noopener" onClick={() => trackConversion('final_cta_click')}>
               <WhatsAppIcon className="h-[26px] w-[26px]" />
               Falar no WhatsApp agora
               <span className="ml-1">→</span>

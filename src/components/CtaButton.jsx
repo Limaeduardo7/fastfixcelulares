@@ -1,4 +1,5 @@
 import WhatsAppIcon from '@/components/WhatsAppIcon'
+import { trackConversion } from '@/lib/gtag'
 
 const WA_LINK = 'https://wa.me/5554999487768?text=Ola!%20Quero%20falar%20sobre%20meu%20celular.'
 
@@ -14,6 +15,7 @@ export default function CtaButton({ className = '', size = 'md' }) {
       href={WA_LINK}
       target="_blank"
       rel="noopener"
+      onClick={() => trackConversion('cta_button_click')}
       className={`inline-flex items-center justify-center rounded-full font-bold text-white
         bg-gradient-to-b from-[#2DDD6C] to-[#19B356]
         shadow-[0_14px_40px_-12px_rgba(37,211,102,.65),inset_0_1px_0_rgba(255,255,255,.25)]

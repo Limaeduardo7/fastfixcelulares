@@ -4,6 +4,7 @@ import BlurText from '@/components/bits/BlurText'
 import ScrollReveal from '@/components/bits/ScrollReveal'
 import QuoteForm from '@/components/QuoteForm'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
+import { trackConversion } from '@/lib/gtag'
 const desktopBg = '/hero-desktop.png'
 const mobileBg = '/hero-mobile.png'
 
@@ -63,7 +64,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap items-center gap-3">
               <Button asChild variant="whatsapp" size="lg">
-                <a href={WA_HERO} target="_blank" rel="noopener">
+                <a href={WA_HERO} target="_blank" rel="noopener" onClick={() => trackConversion('hero_whatsapp_click')}>
                   <WhatsAppIcon className="h-[22px] w-[22px]" />
                   Falar com especialista
                   <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
